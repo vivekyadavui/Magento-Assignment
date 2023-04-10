@@ -1,0 +1,76 @@
+<script>
+         // Handle color box selection
+         const colorBoxes = document.querySelectorAll('.color-box');
+         colorBoxes.forEach(box => {
+         box.addEventListener('click', () => {
+         colorBoxes.forEach(box => box.classList.remove('selected'));
+         box.classList.add('selected');
+         });
+         });
+         	// Handle size box selection
+         	const sizeBoxes = document.querySelectorAll('.size-box');
+         	sizeBoxes.forEach(box => {
+         		box.addEventListener('click', () => {
+         			sizeBoxes.forEach(box => box.classList.remove('selected'));
+         			box.classList.add('selected');
+         		});
+         	});
+         
+         	// Handle tab selection
+         	const tabButtons = document.querySelectorAll('.tab-button');
+         	tabButtons.forEach(button => {
+         		button.addEventListener('click', () => {
+         			const tabContainer = button.parentNode.nextElementSibling;
+         			const tabs = tabContainer.querySelectorAll('.tab');
+         			const activeTab = tabContainer.querySelector('.tab.active');
+         			const targetTab = tabContainer.querySelector(`.tab[data-tab="${button.dataset.tab}"]`);
+         
+         			activeTab.classList.remove('active');
+         			targetTab.classList.add('active');
+         			button.classList.add('active');
+         			tabButtons.forEach(b => {
+         				if (b !== button) {
+         					b.classList.remove('active');
+         				}
+         			});
+         		});
+         	});
+ 
+         var btn = $('.scrollShow');
+           $(window).scroll(function() {
+                 if ($(window).scrollTop() < 2000) {
+                   btn.addClass('show');
+                 } else {
+                   btn.removeClass('show');
+                 }
+               });
+          function myFunction(){
+              $('.nav-bar').slideToggle();
+          }
+     
+     $(document).ready(function(){
+            $('#slider').owlCarousel({
+               loop:true,
+               margin:10,
+               responsiveClass:true,
+               items:1,
+               autoplay:true,
+               responsive:{
+                  0:{
+                        items:1,
+                        nav:true
+                  },
+                  600:{
+                        items:1,
+                        nav:false
+                  },
+                  1000:{
+                        items:1,
+                        nav:false,
+                        dots:true,
+                        loop:false
+                  }
+               }
+            })
+         });
+      </script>

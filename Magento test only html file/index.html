@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>My Product Page</title>
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css"/>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css"/>
+      <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+      <link rel="stylesheet"  href="css/style.css"/>
+      <link rel="stylesheet" href="css/slider.css"/>
+       <link rel="stylesheet" href="css/screen.css"/>
+       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+       <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+   </head>
+   <body>
+      <div class="container">
+         <!-- Top header section -->
+         <div class="top-header">
+            <div class="left-header">
+               <div class="logo">
+                  <img src="images/MY COMPANY.COM.svg" alt="My Company" title="Logo" />
+               </div>
+            </div>
+            <div class="nav-bar">
+               <a href="#">Edit</a>
+               <a href="#">New Arrivals</a>
+               <a href="#">Designers</a>
+               <a href="#">Clothing</a>
+               <a href="#">Shoes</a>
+               <a href="#">Accessories</a>
+               <a href="#">Jewelry</a>
+               <a href="#">Beauty</a>
+               <a href="#">Home</a>
+            </div>
+            <div class="right-header">
+               <div class="search-box">
+                  <img src="images/Search.svg" alt="Search" title="Search" />
+               </div>
+               <div class="cart-icon">
+                  <img src="images/Bag.svg" alt="cart" title="cart" />
+               </div>
+               <div class="account-icon">
+                  <img src="images/Account.svg" alt="account" title="account" />
+               </div>
+                <div class="account-icon desktopIcon" onclick="myFunction()">
+                  <img src="images/Nav.svg" alt="account" title="account" />
+               </div>
+            </div>
+         </div>
+         <!-- Product section -->
+         <div class="product-section">
+            <div class="product-tabs left">
+               <div class="scrollShow">
+                  <div class="tab-header">
+                     <button class="tab-button active" data-tab="details">Details</button>
+                     <button class="tab-button" data-tab="delivery">Delivery</button>
+                     <button class="tab-button" data-tab="fit">Fit</button>
+                     <button class="tab-button" data-tab="share">Share</button>
+                  </div>
+                  <div class="tab-container">
+                     <div class="tab active" data-tab="details">
+                        <p>1Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam euismod ipsum nunc, eu interdum lacus posuere ac. Maecenas tincidunt justo eget dolor congue, et dignissim augue posuere.</p>
+                     </div>
+                     <div class="tab" data-tab="delivery">
+                        <p>2Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam euismod ipsum nunc, eu interdum lacus posuere ac. Maecenas tincidunt justo eget dolor congue, et dignissim augue posuere.</p>
+                     </div>
+                     <div class="tab" data-tab="fit">
+                        <p>3Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam euismod ipsum nunc, eu interdum lacus posuere ac. Maecenas tincidunt justo eget dolor congue, et dignissim augue posuere.</p>
+                     </div>
+                     <div class="tab" data-tab="share">
+                        <p>4Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam euismod ipsum nunc, eu interdum lacus posuere ac. Maecenas tincidunt justo eget dolor congue, et dignissim augue posuere.</p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="scroll">
+                <div class="desktopSlider">
+               <img class="image" src="images/image 409.jpg" alt="Product images" />
+               <img class="image" src="images/image 410.jpg" alt="Product images" />
+               <img class="image" src="images/image 410 (1).jpg" alt="Product images" />
+               <p class="View-like">View More Likes this Product </p>
+               <img class="image" src="images/image 409 (1).jpg" alt="Product images" />
+               <img class="image" src="images/image 410 (2).jpg" alt="Product images" />
+            </div> 
+                <div class="slider">
+                  <div id="slider" class="owl-carousel owl-theme">
+                      <div class="item">
+                          <img class="image" src="images/image 409.jpg" alt="Product images" />
+                      </div>
+                      <div class="item">
+                          <img class="image" src="images/image 410.jpg" alt="Product images" />
+                      </div>
+                      <div class="item">
+                         <img class="image" src="images/image 410 (1).jpg" alt="Product images" />
+                      </div>
+                      <div class="item">
+                          <img class="image" src="images/image 409 (1).jpg" alt="Product images" />
+                      </div>
+                      <div class="item">
+                           <img class="image" src="images/image 410 (2).jpg" alt="Product images" />
+                      </div>
+                    </div>
+                </div>
+            </div>
+            <div class="product-details right" id="scroller">
+               <div class="scrollShow">
+                  <div class="product-title">JONATHAN SIMKHAI</div>
+                  <div class="product-description">Lurex Linen Viscose Jacket in Conchiglia</div>
+                   <div class="priceInfo">$225</div>
+                   <div class="priceInfoColor"><b>COLOR</b> CONCHIGLIA</div>
+                  <div class="product-color">
+                     <div class="color-box selected">
+                       <img class="" src="images/use.png" alt="Product images" />
+                      </div>
+                     <div class="color-box">
+                        <img class="" src="images/use.png" alt="Product images" />
+                      </div>
+                  </div>
+                   <div class="product-sizeouter">
+                    <div class="leftSize"><h2>SIZE L</h2></div>
+                    <div class="RightSize"><a>SIZE GUIDE</a></div>
+                   </div>
+                  <div class="product-size">
+                     <div class="size-box selected">S</div>
+                     <div class="size-box">M</div>
+                     <div class="size-box">L</div>
+                  </div>
+                  <button class="add-to-cart">Add to Bag</button>
+                  <p>Get 4 interest-free payments of $196.25 with Klarna LEARN MORE</p>
+                  <p>Speak to a Personal Stylist CHAT NOW</p>
+               </div>
+            </div>
+         </div>
+          <div class="contentInfo">
+                  <a href="">Nonathan Simkhai</a>
+                  <a href="">Blazers</a>
+                  <a href="">Viscose</a>
+               </div>
+               <div class="outerNoteInfo">
+                  <h6>A Note from the editor</h6>
+                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+               </div>
+               <div class="footerInfo">
+                  <p>- By<a href=""> MINNA SHIM, </a> Fashion Editor</p>
+               </div>
+      </div>
+      <script>
+         // Handle color box selection
+         const colorBoxes = document.querySelectorAll('.color-box');
+         colorBoxes.forEach(box => {
+         box.addEventListener('click', () => {
+         colorBoxes.forEach(box => box.classList.remove('selected'));
+         box.classList.add('selected');
+         });
+         });
+         	// Handle size box selection
+         	const sizeBoxes = document.querySelectorAll('.size-box');
+         	sizeBoxes.forEach(box => {
+         		box.addEventListener('click', () => {
+         			sizeBoxes.forEach(box => box.classList.remove('selected'));
+         			box.classList.add('selected');
+         		});
+         	});
+         
+         	// Handle tab selection
+         	const tabButtons = document.querySelectorAll('.tab-button');
+         	tabButtons.forEach(button => {
+         		button.addEventListener('click', () => {
+         			const tabContainer = button.parentNode.nextElementSibling;
+         			const tabs = tabContainer.querySelectorAll('.tab');
+         			const activeTab = tabContainer.querySelector('.tab.active');
+         			const targetTab = tabContainer.querySelector(`.tab[data-tab="${button.dataset.tab}"]`);
+         
+         			activeTab.classList.remove('active');
+         			targetTab.classList.add('active');
+         			button.classList.add('active');
+         			tabButtons.forEach(b => {
+         				if (b !== button) {
+         					b.classList.remove('active');
+         				}
+         			});
+         		});
+         	});
+      </script>
+      <script src="js/custom.js" > </script>
+      <script src="js/owlcarousel.min.js" > </script>
+      <script>
+         var btn = $('.scrollShow');
+           $(window).scroll(function() {
+                 if ($(window).scrollTop() < 2000) {
+                   btn.addClass('show');
+                 } else {
+                   btn.removeClass('show');
+                 }
+               });
+          function myFunction(){
+              $('.nav-bar').slideToggle();
+          }
+      </script>
+       <script>
+         $(document).ready(function(){
+            $('#slider').owlCarousel({
+               loop:true,
+               margin:10,
+               responsiveClass:true,
+               items:1,
+               autoplay:true,
+               responsive:{
+                  0:{
+                        items:1,
+                        nav:true
+                  },
+                  600:{
+                        items:1,
+                        nav:false
+                  },
+                  1000:{
+                        items:1,
+                        nav:false,
+                        dots:true,
+                        loop:false
+                  }
+               }
+            })
+         });
+      </script>
+   </body>
+</html>

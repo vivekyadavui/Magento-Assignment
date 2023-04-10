@@ -1,0 +1,49 @@
+@media screen and (max-width: 768px) {
+    .product-tabs.left{
+        display:none;
+    }
+    .nav-bar{
+        display: none;
+        position: absolute;
+        top: 0;
+        z-index: 99;
+        left: 0;
+        top: 60px;
+        background: #fff;
+        box-shadow: 0 0px 0px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
+        width: 100%;
+    }
+    .product-section, .outerNoteInfo{
+      display:inline-block;
+    padding:0px 15px;
+        box-sizing: border-box;
+    }
+    .scroll{
+       width:100%;
+        height:auto;
+    }
+    .right{
+       position: inherit !important;
+    }
+    .logo{
+        padding-top:0px;
+    }
+    .scrollShow{
+        position:inherit !important;
+        width: 100%;
+    }
+    .desktopSlider{
+        display:none;
+    }
+    .slider{
+        display:block;
+    }
+    .owl-theme .owl-nav{
+        display:none;
+    }
+    .desktopIcon{
+  display:block;
+}
+    .owl-theme .owl-dots{
+margin-top:10px}
+}

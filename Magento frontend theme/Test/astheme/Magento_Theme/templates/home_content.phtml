@@ -1,0 +1,106 @@
+<?php 
+$objectManager = \Magento\Framework\App\ObjectManager::getInstance();
+$request = $objectManager->get('Magento\Framework\App\Action\Context')->getRequest();
+$request->getFullActionName(); 
+$cmsPage = $objectManager->get('\Magento\Cms\Model\Page');
+$cmsPage->getIdentifier(); 
+if ($request->getFullActionName() != 'cms_page_view' && $cmsPage->getIdentifier() != 'plans') {
+?>
+<div class="container"> 
+    <!-- Product section -->
+    <div class="product-section">
+       <div class="product-tabs left">
+          <div class="scrollShow">
+             <div class="tab-header">
+                <button class="tab-button active" data-tab="details">Details</button>
+                <button class="tab-button" data-tab="delivery">Delivery</button>
+                <button class="tab-button" data-tab="fit">Fit</button>
+                <button class="tab-button" data-tab="share">Share</button>
+             </div>
+             <div class="tab-container">
+                <div class="tab active" data-tab="details">
+                   <p>1Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam euismod ipsum nunc, eu interdum lacus posuere ac. Maecenas tincidunt justo eget dolor congue, et dignissim augue posuere.</p>
+                </div>
+                <div class="tab" data-tab="delivery">
+                   <p>2Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam euismod ipsum nunc, eu interdum lacus posuere ac. Maecenas tincidunt justo eget dolor congue, et dignissim augue posuere.</p>
+                </div>
+                <div class="tab" data-tab="fit">
+                   <p>3Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam euismod ipsum nunc, eu interdum lacus posuere ac. Maecenas tincidunt justo eget dolor congue, et dignissim augue posuere.</p>
+                </div>
+                <div class="tab" data-tab="share">
+                   <p>4Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam euismod ipsum nunc, eu interdum lacus posuere ac. Maecenas tincidunt justo eget dolor congue, et dignissim augue posuere.</p>
+                </div>
+             </div>
+          </div>
+       </div>
+       <div class="scroll">
+           <div class="desktopSlider">
+          <img class="image" src="images/image 409.jpg" alt="Product images" />
+          <img class="image" src="images/image 410.jpg" alt="Product images" />
+          <img class="image" src="images/image 410 (1).jpg" alt="Product images" />
+          <img class="image" src="images/image 409 (1).jpg" alt="Product images" />
+          <img class="image" src="images/image 410 (2).jpg" alt="Product images" />
+       </div> 
+           <div class="slider">
+             <div id="slider" class="owl-carousel owl-theme">
+                 <div class="item">
+                     <img class="image" src="images/image 409.jpg" alt="Product images" />
+                 </div>
+                 <div class="item">
+                     <img class="image" src="images/image 410.jpg" alt="Product images" />
+                 </div>
+                 <div class="item">
+                    <img class="image" src="images/image 410 (1).jpg" alt="Product images" />
+                 </div>
+                 <div class="item">
+                     <img class="image" src="images/image 409 (1).jpg" alt="Product images" />
+                 </div>
+                 <div class="item">
+                      <img class="image" src="images/image 410 (2).jpg" alt="Product images" />
+                 </div>
+               </div>
+           </div>
+       </div>
+       <div class="product-details right" id="scroller">
+          <div class="scrollShow">
+             <div class="product-title">JONATHAN SIMKHAI</div>
+             <div class="product-description">Lurex Linen Viscose Jacket in Conchiglia</div>
+              <div class="priceInfo">$225</div>
+              <div class="priceInfoColor"><b>COLOR</b> CONCHIGLIA</div>
+             <div class="product-color">
+                <div class="color-box selected">
+                  <img class="" src="images/use.png" alt="Product images" />
+                 </div>
+                <div class="color-box">
+                   <img class="" src="images/use.png" alt="Product images" />
+                 </div>
+             </div>
+              <div class="product-sizeouter">
+               <div class="leftSize"><h2>SIZE L</h2></div>
+               <div class="RightSize"><a>SIZE GUIDE</a></div>
+              </div>
+             <div class="product-size">
+                <div class="size-box selected">S</div>
+                <div class="size-box">M</div>
+                <div class="size-box">L</div>
+             </div>
+             <button class="add-to-cart">Add to Cart</button>
+             <p>Get 4 interest-free payments of $196.25 with Klarna LEARN MORE</p>
+             <p>Speak to a Personal Stylist CHAT NOW</p>
+          </div>
+       </div>
+    </div>
+     <div class="contentInfo">
+             <a href="">Nonathan Simkhai</a>
+             <a href="">Blazers</a>
+             <a href="">Viscose</a>
+          </div>
+          <div class="outerNoteInfo">
+             <h6>A Note from the editor</h6>
+             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+          </div>
+          <div class="footerInfo">
+             <p>- By<a href=""> MINNA SHIM, </a> Fashion Editor</p>
+          </div>
+ </div>
+ <?php } ?>

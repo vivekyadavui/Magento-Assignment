@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © 2016 Magento. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+-->
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceBlock name="head.additional">
+            <block class="Test\Astheme\Block\Template" name="config.theme.setting"
+                   template="Magento_Theme::html/config.phtml"/>
+        </referenceBlock>
+        <referenceContainer name="page.wrapper">
+            <container name="header.panel.wrapper" htmlClass="panel wrapper" htmlTag="div" before="-"/>
+            <block class="Magento\Theme\Block\Html\Header" name="header.content" template="html/header.phtml"
+                   before="page.top">
+
+                <container name="navigation-header" label="Navigation" as="navigation-header" htmlTag="div"
+                           htmlClass="navigation-wrapper"/>
+
+              
+
+                <block class="Magento\Framework\View\Element\Html\Links" name="header.links">
+                    <arguments>
+                        <argument name="css_class" xsi:type="string">header links</argument>
+                    </arguments>
+                </block>
+
+              
+                
+
+            </block>
+        </referenceContainer>
+
+       
+        <referenceContainer name="footer-container">
+            <container name="footer" as="footer" label="Page Footer" htmlTag="div" htmlClass="footer footer-wrapper">
+                <block class="Magento\Theme\Block\Html\Footer" name="footer.content" template="html/footer.phtml">
+                    
+                </block>
+
+            </container>
+        </referenceContainer>
+    </body>
+</page>
